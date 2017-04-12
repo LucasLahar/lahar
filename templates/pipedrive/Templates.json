@@ -1,0 +1,48 @@
+[
+  {
+    "app_source": "pipedrive",
+    "app_target": "lahar",
+    "filters": [[{"field": "status", "condition": "contains", "value": "open"}]],
+    "mapper": [
+      {"key": "nome_formulario", "content": "novo_deal_pipedrive"},
+      {"key": "email_contato", "content": "{{person_id.email}}"}
+    ],
+    "trigger_key": "created_deal",
+    "action_key": "send_lead",
+    "name": {"pt_BR": "A cada deal criado no Pipedrive, incluir/atualizar o lead na LAHAR",
+          "en": "For every new deal created on Pipedrive, create a new lead on LAHAR"},
+    "description": {
+      "why_integrate": [{"pt_BR": "Na maioria dos casos as empresas migram o lead da LAHAR para o Pipedrive quando ele atende a certos requisitos definidos pela equipe de marketing, ou seja, quando se torna um lead qualificado para equipe de vendas. Esta automatização usa o sentido inverso, ela cria ou atualiza um lead na LAHAR toda vez que você cria um novo negócio no Pipedrive.",
+                      "en": "At the most case scenario, companies migrate leads from LAHAR to Pipedrive when attends certain aspects of marketing team. This automation create or update a lead on LAHAR every time that you create a new deal on Pipedrive."}],
+      "how_it_works": [{"pt_BR": "A Pluga fica de olho nos novos deals criados no Pipedrive.",
+                      "en": "Pluga keeps an eye on every deal created on your Pipedrive."},
+                      {"pt_BR": "Quando isto ocorrer, nós criaremos o lead, caso ele não exista, ou atualizaremos o lead na base de leads na LAHAR.",
+                      "en": "When this occur, we will create or update the lead on LAHAR."},
+                      {"pt_BR": "Lembrem-se que você pode definir na criação da sua automatização qual o nome do evento que este lead converteu [exemplo \"novo_deal_pipedrive\"], o que lhe ajudará a incluir este lead em determinado fluxo de automação na LAHAR.",
+                      "en": "Remember: when you create your automation, you can define the event name of the lead converted. [example: \"novo_deal_pipedrive\"], what helps you to include this lead in a certain automation pipeline on LAHAR."}]
+    }
+  },
+  {
+    "app_source": "pipedrive",
+    "app_target": "lahar",
+    "filters": [[{"field": "status", "condition": "contains", "value": "lost"}]],
+    "mapper": [
+      {"key": 'nome_formulario', "content": "lost_deal_pipedrive"},
+      {"key": 'email_contato', "content": "{{person_id.email}}"}
+    ],
+    "trigger_key": "lost_deal",
+    "action_key": "send_lead",
+    "name": {"pt_BR": "A cada deal perdido no Pipedrive, incluir/atualizar o lead na LAHAR",
+          "en": "For every lost deal on Pipedrive, create a new lead on LAHAR"},
+    "description": {
+      "why_integrate": [{"pt_BR": "Na maioria dos casos as empresas migram o lead da LAHAR para o Pipedrive quando ele atende a certos requisitos definidos pela equipe de marketing, ou seja, quando se torna um lead qualificado para equipe de vendas. Esta automatização usa o sentido inverso, ela cria ou atualiza um lead na LAHAR toda vez que você cria um novo negócio no Pipedrive.",
+                      "en": "At the most case scenario, companies migrate leads from LAHAR to Pipedrive when attends certain aspects of marketing team. This automation create or update a lead on LAHAR every time that you create a new deal on Pipedrive."}],
+      "how_it_works": [{"pt_BR": "A Pluga fica de olho nos novos deals perdidos no Pipedrive.",
+                      "en": "Pluga keeps an eye on every lost deal on your Pipedrive."},
+                      {"pt_BR": "Quando isto ocorrer, nós criaremos o lead, caso ele não exista, ou atualizaremos o lead na base de leads na LAHAR.",
+                      "en": "When this occur, we will create or update the lead on LAHAR."},
+                      {"pt_BR": "Lembrem-se que você pode definir na criação da sua automatização qual o nome do evento que este lead converteu [exemplo \"deal_perdido_pipedrive\"], o que lhe ajudará a incluir este lead em determinado fluxo de automação na LAHAR.",
+                      "en": "Remember: when you create your automation, you can define the event name of the lead converted. [example: \"lost_deal_pipedrive\"], what helps you to include this lead in a certain automation pipeline on LAHAR."}]
+    }
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "name": "LAHAR",
+  "app_id": "lahar",
+  "is_integrated": true,
+  "color": "#053C50",
+  "description": {
+    "pt_BR": "A LAHAR é um software digital que descomplica as atividades de marketing digital de pequenas e médias empresas. Por meio da automação de marketing, fornecemos um pacote completo de ferramentas para atrair leads e criar relacionamentos que geram conversões e resultados financeiros via internet.",
+    "en": "LAHAR is a digital software that eases the digital marketing tasks for small and medium sized companies. Through marketing automation, we offer a set of tools focused in attract leads and build relationships that results in conversions and positive financial results through internet."
+  },
+  "website": "http://www.lahar.com.br/",
+  "signup_url": "http://www.lahar.com.br/",
+  "video": "https://youtu.be/4I5x1VXhoFY",
+  "api_base_uri": {
+    "production": {"uri": "http://app.lahar.com.br/api", "label": "Produção", "default": true}
+  },
+  "authentication": {
+    "type": "pass_through_query_string",
+    "fields": [
+      {"name": "token_api_lahar", "label": "Token API LAHAR", "type": "text", "validations": [{"name": "min_length", "value": 24}]}
+     ],
+    "status": {
+      "field": "status",
+      "value": "erro"
+    },
+    "tutorial": {
+      "link": {
+        "pt_BR": "Onde encontrar meu Token na LAHAR?",
+        "en": "Where can I find my Token on LAHAR?"},
+      "steps": [
+        {"title": {
+          "pt_BR": "Passo 1",
+          "en": "Step 1"
+        },
+          "content": {
+            "pt_BR": "Acesse <a href='http://app.lahar.com.br' target='_blank'>app.lahar.com.br</a> e entre com seu e-mail e senha, caso não esteja logado.",
+            "en": "Access <a href='http://app.lahar.com.br' target='_blank'>app.lahar.com.br</a> and log in using your username and password if you haven’t already done so."
+          },
+          "img_url": {
+            "pt_BR": "https://manage.pluga.co/images/token-steps/lahar/step1.png",
+            "en": "https://manage.pluga.co/images/token-steps/lahar/step1.png"
+          }
+        },
+        {"title": {
+          "pt_BR": "Passo 2",
+          "en": "Step 2"
+        },
+          "content": {
+            "pt_BR": "No canto superior direito, clique no ícone de pessoa e depois acesse o link <strong>'Configurações'</strong> para prosseguir.",
+            "en": "Click on the person icon on the top right corner and then access the ‘Settings’ link to continue."
+          },
+          "img_url": {
+            "pt_BR": "https://manage.pluga.co/images/token-steps/lahar/step2.png",
+            "en": "https://manage.pluga.co/images/token-steps/lahar/step2.png"
+          }
+        },
+        {"title": {
+          "pt_BR": "Passo 3",
+          "en": "Step 3"
+        },
+          "content": {
+            "pt_BR": "Nesta tela de Configurações > Gerais, desça a página, encontre o primeiro item da lista <strong>API LAHAR</strong> e clique no botão <strong>'Configurar'</strong>.",
+            "en": "Scroll down on the Settings > General page, find the first item on the LAHAR API list then click on the ‘Set up’ button."
+          },
+          "img_url": {
+            "pt_BR": "https://manage.pluga.co/images/token-steps/lahar/step3.png",
+            "en": "https://manage.pluga.co/images/token-steps/lahar/step3.png"
+          }
+        },
+        {"title": {
+          "pt_BR": "Passo 4",
+          "en": "Step 4"
+        },
+          "content": {
+            "pt_BR": "Pronto! Seu Token está aí. Agora é só copiá-lo, colar na Pluga e continuar com sua automatização. :)",
+            "en": "Done! There’s your Token! Now all you have to do is copy it, paste it to Pluga and continue with your automation. :)"
+          },
+          "img_url": {
+            "pt_BR": "https://manage.pluga.co/images/token-steps/lahar/step4.png",
+            "en": "https://manage.pluga.co/images/token-steps/lahar/step4.png"
+          }
+        }
+      ]
+    }
+  }
+}
