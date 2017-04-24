@@ -1,0 +1,71 @@
+[
+  {
+    "app_source": "plugcrm",
+    "app_target": "lahar",
+    "filters": [[{"field": "win", "condition": "contains", "value": null}]],
+    "mapper": [
+      {"key": "nome_formulario", "content": "plugcrm_negocio_criado"},
+      {"key": "email_contato", "content": "{{contact.email}}"}
+    ],
+    "trigger_key": "created_deal",
+    "action_key": "send_lead",
+    "name": {"pt_BR": "A cada negócio criado na PlugCRM, incluir ou atualizar o lead na LAHAR",
+          "en": "For every new created deal on PlugCRM, create or update a new lead on RD Station"},
+    "description": {
+      "why_integrate": [{"pt_BR": "Na maioria dos casos as empresas migram o lead da LAHAR para o PlugCRM quando ele atende a certos requisitos definidos pela equipe de marketing, ou seja, quando se torna um lead qualificado para equipe de vendas. Esta automatização usa o sentido inverso, ela cria ou atualiza um lead na LAHAR toda vez que você cria um novo negócio na PlugCRM.",
+                      "en": "At the most case scenario, companies migrate leads from LAHAR to PlugCRM when attends certain aspects of marketing team. This automation create or update a lead on LAHAR every time that you create a new deal on PlugCRM."}],
+      "how_it_works": [{"pt_BR": "A Pluga fica de olho nos novos negócios criados na PlugCRM.",
+                      "en": "Pluga keeps an eye on every created deal on your PlugCRM."},
+                      {"pt_BR": "Quando isto ocorrer, nós criaremos o lead, caso ele não exista, ou atualizaremos o lead na base de leads na LAHAR.",
+                      "en": "When this occur, we will create or update the lead on LAHAR."},
+                      {"pt_BR": "Lembrem-se que você pode definir na criação da sua automatização qual o nome do evento que este lead converteu [exemplo \"plugcrm_negocio_criado\"], o que lhe ajudará a incluir este lead em determinado fluxo de automação na LAHAR.",
+                      "en": "Remember: when you create your automation, you can define the event name of the lead converted. [example: \"plugcrm_created_deal\"], what helps you to include this lead in a certain automation pipeline on LAHAR."}]
+    }
+  },
+  {
+    "app_source": "plugcrm",
+    "app_target": "lahar",
+    "filters": [[{"field": "win", "condition": "contains", "value": true}]],
+    "mapper": [
+      {"key": "nome_formulario", "content": "plugcrm_negocio_ganho"},
+      {"key": "email_contato", "content": "{{contact.email}}"}
+    ],
+    "trigger_key": "deal",
+    "action_key": "send_lead",
+    "name": {"pt_BR": "A cada negócio ganho na PlugCRM, incluir ou atualizar o lead na LAHAR",
+          "en": "For every new closed deal on PlugCRM, create or update a new lead on LAHAR"},
+    "description": {
+      "why_integrate": [{"pt_BR": "Na maioria dos casos as empresas migram o lead da LAHAR para o PlugCRM quando ele atende a certos requisitos definidos pela área de marketing, ou seja, quando se torna um lead qualificado para equipe de vendas. Esta automatização usa o sentido inverso, ela cria ou atualiza um lead na LAHAR toda vez que você cria um novo negócio na PlugCRM.",
+                      "en": "At the most case scenario, companies migrate leads from LAHAR to PlugCRM when attends certain aspects of marketing area. This automation create or update a lead on LAHAR every time that you create a new deal on PlugCRM."}],
+      "how_it_works": [{"pt_BR": "A Pluga fica de olho nos novos negócios ganhos na PlugCRM.",
+                      "en": "Pluga keeps an eye on every closed deal on your PlugCRM."},
+                      {"pt_BR": "Quando isto ocorrer, nós criaremos o lead, caso ele não exista, ou atualizaremos o lead na base de leads na LAHAR.",
+                      "en": "When this occur, we will create or update the lead on LAHAR."},
+                      {"pt_BR": "Lembrem-se que você pode definir na criação da sua automatização qual o nome do evento que este lead converteu [exemplo \"plugcrm_negocio_ganho\"], o que lhe ajudará a incluir este lead em determinado fluxo de automação na LAHAR.",
+                      "en": "Remember: when you create your automation, you can define the event name of the lead converted. [example: \"plugcrm_closed_deal\"], what helps you to include this lead in a certain automation pipeline on LAHAR."}]
+    }
+  },
+  {
+    "app_source": "plugcrm",
+    "app_target": "lahar",
+    "filters": [[{"field": "win", "condition": "contains", "value": false}]],
+    "mapper": [
+      {"key": "nome_formulario", "content": "plugcrm_negocio_perdido"},
+      {"key": "email_contato", "content": "{{contact.email}}"}
+    ],
+    "trigger_key": "deal",
+    "action_key": "send_lead",
+    "name": {"pt_BR": "A cada negócio perdido na PlugCRM, incluir ou atualizar o lead na LAHAR",
+          "en": "For every new lost deal on PlugCRM, create or update a new lead on LAHAR"},
+    "description": {
+      "why_integrate": [{"pt_BR": "Na maioria dos casos as empresas migram o lead da LAHAR para o PlugCRM quando ele atende a certos requisitos definidos pela área de marketing, ou seja, quando se torna um lead qualificado para equipe de vendas. Esta automatização usa o sentido inverso, ela cria ou atualiza um lead na LAHAR toda vez que você cria um novo negócio na PlugCRM.",
+                      "en": "At the most case scenario, companies migrate leads from LAHAR to PlugCRM when attends certain aspects of marketing area. This automation create or update a lead on LAHAR every time that you create a new deal on PlugCRM."}],
+      "how_it_works": [{"pt_BR": "A Pluga fica de olho nos novos negócios perdidos na PlugCRM.",
+                      "en": "Pluga keeps an eye on every lost deal on your PlugCRM."},
+                      {"pt_BR": "Quando isto ocorrer, nós criaremos o lead, caso ele não exista, ou atualizaremos o lead na base de leads na LAHAR.",
+                      "en": "When this occur, we will create or update the lead on LAHAR."},
+                      {"pt_BR": "Lembrem-se que você pode definir na criação da sua automatização qual o nome do evento que este lead converteu [exemplo \"plugcrm_negocio_perdido\"], o que lhe ajudará a incluir este lead em determinado fluxo de automação na LAHAR.",
+                      "en": "Remember: when you create your automation, you can define the event name of the lead converted. [example: \"plugcrm_lost_deal\"], what helps you to include this lead in a certain automation pipeline on LAHAR."}]
+    }
+  }
+]
