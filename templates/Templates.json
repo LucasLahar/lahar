@@ -1,0 +1,23 @@
+[
+  {
+    "app_source": "lahar",
+    "app_target": "slack",
+    "filters": [[{"field": "status", "condition": "contains", "value": "open"}]],
+    "mapper": [
+    ],
+    "trigger_key": "lead_information",
+    "action_key": "create_message",
+    "name": {"pt_BR": "LAHAR -> Slack",
+          "en": ""},
+    "description": {
+      "why_integrate": [{"pt_BR": "",
+                      "en": ""}],
+      "how_it_works": [{"pt_BR": "",
+                      "en": ""},
+                      {"pt_BR": "",
+                      "en": ""},
+                      {"pt_BR": "",
+                      "en": ""}]
+    }
+  }
+]
