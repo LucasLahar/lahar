@@ -1,12 +1,12 @@
 {
   "name": {
-    "pt_BR": "envio das informações do lead",
-    "en": "send lead information"
+    "pt_BR": "Envio das informações de um novo lead",
+    "en": "Sending information about a new lead"
   },
-  "trigger_key": "lead_information",
+  "trigger_key": "new_lead",
   "description": {
-    "pt_br": "Envia as informações do lead que estão na LAHAR",
-    "en": "Send the lead information that is in LAHAR"
+    "pt_br": "Envia as informações do lead que foi inserido na LAHAR",
+    "en": "Send as information of what was inserted in LAHAR"
   },
   "trigger_fields": {
     "type": "local",
@@ -41,28 +41,6 @@
        "description": {
           "pt_BR": "nome do contato",
           "en": "contact name"
-       },
-       "field_type": "string"
-      },
-      {"key": "sobrenome",
-       "name": {
-          "pt_BR": "sobrenome",
-          "en": "last name"
-       },
-       "description": {
-          "pt_BR": "sobrenome do contato",
-          "en": "contact last name"
-       },
-       "field_type": "string"
-      },
-      {"key": "foto",
-       "name": {
-          "pt_BR": "foto",
-          "en": "picture"
-       },
-       "description": {
-          "pt_BR": "foto do contato",
-          "en": "contact picture"
        },
        "field_type": "string"
       },
@@ -173,17 +151,6 @@
        "description": {
           "pt_BR": "nome da empresa do contato",
           "en": "contact company name"
-       },
-       "field_type": "string"
-      },
-      {"key": "cargo",
-       "name": {
-          "pt_BR": "cargo",
-          "en": "job role"
-       },
-       "description": {
-          "pt_BR": "cargo do contato",
-          "en": "contact job role"
        },
        "field_type": "string"
       },
@@ -351,28 +318,6 @@
           "en": "contact source"
        },
        "field_type": "string"
-      },
-      {"key": "perfil",
-       "name": {
-          "pt_BR": "perfil do contato",
-          "en": "contact profile"
-       },
-       "description": {
-          "pt_BR": "perfil do contato",
-          "en": "contact profile"
-       },
-       "field_type": "decimal"
-      },
-      {"key": "interesse",
-       "name": {
-          "pt_BR": "interesse do contato",
-          "en": "contact scoring"
-       },
-       "description": {
-          "pt_BR": "interesse do contato",
-          "en": "contact scoring"
-       },
-       "field_type": "integer"
       },
       {"key": "envia_email",
        "name": {
