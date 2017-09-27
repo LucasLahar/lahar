@@ -1,12 +1,12 @@
 {
    "name":{
-      "pt_BR":"enviar lead para base de contatos na LAHAR",
-      "en":"send lead in database LAHAR"
+      "pt_BR":"Cria ou atualiza um lead na base de contatos na LAHAR",
+      "en":"Create or update a lead in the contact base on LAHAR"
    },
    "action_key":"send_lead",
    "description":{
-      "pt_BR":"enviar lead para base de contatos na LAHAR",
-      "en":"send lead in database LAHAR"
+      "pt_BR":"Criar ou atualizar um lead na base de contatos na LAHAR",
+      "en":"Create or update a lead in the contact base in LAHAR"
    },
    "action_fields":{
       "fields":[
