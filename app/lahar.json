@@ -11,7 +11,7 @@
   "signup_url": "http://www.lahar.com.br/",
   "video": "https://youtu.be/4I5x1VXhoFY",
   "api_base_uri": {
-    "production": {"uri": "http://app.lahar.com.br/api", "label": "Produção", "default": true}
+    "production": {"uri": "https://app.lahar.com.br/api", "label": "Produção", "default": true}
   },
   "authentication": {
     "type": "pass_through_query_string",
@@ -32,8 +32,8 @@
           "en": "Step 1"
         },
           "content": {
-            "pt_BR": "Acesse <a href='http://app.lahar.com.br' target='_blank'>app.lahar.com.br</a> e entre com seu e-mail e senha, caso não esteja logado.",
-            "en": "Access <a href='http://app.lahar.com.br' target='_blank'>app.lahar.com.br</a> and log in using your username and password if you haven’t already done so."
+            "pt_BR": "Acesse <a href='https://app.lahar.com.br' target='_blank'>app.lahar.com.br</a> e entre com seu e-mail e senha, caso não esteja logado.",
+            "en": "Access <a href='https://app.lahar.com.br' target='_blank'>app.lahar.com.br</a> and log in using your username and password if you haven’t already done so."
           },
           "img_url": {
             "pt_BR": "https://manage.pluga.co/images/token-steps/lahar/step1.png",
