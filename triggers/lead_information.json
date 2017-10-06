@@ -438,11 +438,11 @@
       "create": {
         "verb": "POST",
         "method_name": "/pluga_trigger",
-        "params": {"event":"new_lead","token":{token_api_lahar}}
+        "params": {"event":"new_lead"}
       },
       "delete": {
         "verb": "DELETE",
-        "method_name": "/pluga_trigger/{id}/{token_api_lahar}"
+        "method_name": "/pluga_trigger/{id}"
       },
       "meta_params": {
         "webhook_id": "id",
