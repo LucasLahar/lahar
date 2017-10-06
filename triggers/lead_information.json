@@ -36,11 +36,22 @@
       {"key": "nome",
        "name": {
           "pt_BR": "nome",
-          "en": "name"
+          "en": "first name"
        },
        "description": {
           "pt_BR": "nome do contato",
-          "en": "contact name"
+          "en": "contact first name"
+       },
+       "field_type": "string"
+      },
+      {"key": "sobrenome",
+       "name": {
+          "pt_BR": "sobrenome",
+          "en": "last name"
+       },
+       "description": {
+          "pt_BR": "sobrenome do contato",
+          "en": "contact last name"
        },
        "field_type": "string"
       },
@@ -319,6 +330,28 @@
        },
        "field_type": "string"
       },
+      {"key": "perfil",
+       "name": {
+          "pt_BR": "perfil do contato",
+          "en": "contact profile"
+       },
+       "description": {
+          "pt_BR": "perfil do contato",
+          "en": "contact profile"
+       },
+       "field_type": "string"
+      },
+      {"key": "interesse",
+       "name": {
+          "pt_BR": "interesse do contato",
+          "en": "contact interest"
+       },
+       "description": {
+          "pt_BR": "interesse do contato",
+          "en": "contact interest"
+       },
+       "field_type": "string"
+      },
       {"key": "envia_email",
        "name": {
           "pt_BR": "enviar email ao contato",
@@ -329,39 +362,6 @@
           "en": "contact send email"
        },
        "field_type": "string"
-      },
-      {"key": "envia_sms",
-       "name": {
-          "pt_BR": "enviar sms ao contato",
-          "en": "contact send sms"
-       },
-       "description": {
-          "pt_BR": "enviar sms ao contato",
-          "en": "contact send sms"
-       },
-       "field_type": "string"
-      },
-      {"key": "sexo",
-       "name": {
-          "pt_BR": "sexo",
-          "en": "gender"
-       },
-       "description": {
-          "pt_BR": "sexo do contato",
-          "en": "contact gender"
-       },
-       "field_type": "string"
-      },
-      {"key": "dtaniversario",
-       "name": {
-          "pt_BR": "data de aniversário",
-          "en": "birthday"
-       },
-       "description": {
-          "pt_BR": "data de aniversário do contato",
-          "en": "contact birthday"
-       },
-       "field_type": "date"
       },
       {"key": "dtcriacao",
        "name": {
@@ -395,11 +395,66 @@
           "en": "contact inactivation date"
        },
        "field_type": "datetime"
+      },
+      {"key": "envia_sms",
+       "name": {
+          "pt_BR": "enviar sms ao contato",
+          "en": "contact send sms"
+       },
+       "description": {
+          "pt_BR": "enviar sms ao contato",
+          "en": "contact send sms"
+       },
+       "field_type": "string"
+      },
+      {"key": "sexo",
+       "name": {
+          "pt_BR": "sexo",
+          "en": "gender"
+       },
+       "description": {
+          "pt_BR": "sexo do contato",
+          "en": "contact gender"
+       },
+       "field_type": "string"
+      },
+      {"key": "dtaniversario",
+       "name": {
+          "pt_BR": "data de aniversário",
+          "en": "birthday"
+       },
+       "description": {
+          "pt_BR": "data de aniversário do contato",
+          "en": "contact birthday"
+       },
+       "field_type": "date"
       }
     ]
   },
-  "trigger_type": "webhook",
+  "trigger_type": "rest_hook",
   "webhook": {
-    "message_type": "object"
-  }
+    "message_type": "object",
+    "rest_hook_config": {
+      "create": {
+        "verb": "POST",
+        "method_name": "/pluga_trigger",
+        "params": {"event":"new_lead","token":{token_api_lahar}}
+      },
+      "delete": {
+        "verb": "DELETE",
+        "method_name": "/pluga_trigger/{id}/{token_api_lahar}"
+      },
+      "meta_params": {
+        "webhook_id": "id",
+        "webhook_url": "url"
+      }
+    }  
+  },
+  "event_filter":{
+    "field":"event",
+    "events":["new_lead"]
+  },
+  "idempotent":[
+    {"type":"body", "field":"id"}
+  ]
 }
