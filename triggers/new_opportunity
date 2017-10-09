@@ -1,0 +1,460 @@
+{
+  "name": {
+    "pt_BR": "Envio das informações de um lead quando passa a ser uma oportunidade",
+    "en": "Sending information from a lead when it becomes an opportunity"
+  },
+  "trigger_key": "new_opportunity",
+  "description": {
+    "pt_br": "Envia as informações do lead quando mudar de estágio para oportunidade na LAHAR",
+    "en": "Send lead information when you move from stage to opportunity in LAHAR"
+  },
+  "trigger_fields": {
+    "type": "local",
+    "fields": [
+      {"key": "id",
+       "name": {
+          "pt_BR": "id",
+          "en": "id"
+       },
+       "description": {
+          "pt_BR": "id do contato",
+          "en": "contact id"
+       },
+       "field_type": "integer"
+      },
+      {"key": "email",
+       "name": {
+          "pt_BR": "email",
+          "en": "email"
+       },
+       "description": {
+          "pt_BR": "email do contato",
+          "en": "contact email"
+       },
+       "field_type": "string"
+      },
+      {"key": "nome",
+       "name": {
+          "pt_BR": "nome",
+          "en": "first name"
+       },
+       "description": {
+          "pt_BR": "nome do contato",
+          "en": "contact first name"
+       },
+       "field_type": "string"
+      },
+      {"key": "sobrenome",
+       "name": {
+          "pt_BR": "sobrenome",
+          "en": "last name"
+       },
+       "description": {
+          "pt_BR": "sobrenome do contato",
+          "en": "contact last name"
+       },
+       "field_type": "string"
+      },
+      {"key": "tel_fixo",
+       "name": {
+          "pt_BR": "telefone fixo",
+          "en": "phone number"
+       },
+       "description": {
+          "pt_BR": "telefone fixo do contato",
+          "en": "contact phone number"
+       },
+       "field_type": "integer"
+      },
+      {"key": "tel_celular",
+       "name": {
+          "pt_BR": "telefone celular",
+          "en": "mobile phone number"
+       },
+       "description": {
+          "pt_BR": "telefone celular do contato",
+          "en": "contact mobile phone number"
+       },
+       "field_type": "integer"
+      },
+      {"key": "site_blog",
+       "name": {
+          "pt_BR": "site ou blog",
+          "en": "site or blog"
+       },
+       "description": {
+          "pt_BR": "site ou blog do contato",
+          "en": "contact site or blog"
+       },
+       "field_type": "string"
+      },
+      {"key": "linkedin",
+       "name": {
+          "pt_BR": "linkedin",
+          "en": "linkedin"
+       },
+       "description": {
+          "pt_BR": "linkedin do contato",
+          "en": "contact linkedin"
+       },
+       "field_type": "string"
+      },
+      {"key": "twitter",
+       "name": {
+          "pt_BR": "twitter",
+          "en": "twitter"
+       },
+       "description": {
+          "pt_BR": "twitter do contato",
+          "en": "contact twitter"
+       },
+       "field_type": "string"
+      },
+      {"key": "facebook",
+       "name": {
+          "pt_BR": "facebook",
+          "en": "facebook"
+       },
+       "description": {
+          "pt_BR": "facebook do contato",
+          "en": "contact facebook"
+       },
+       "field_type": "string"
+      },
+      {"key": "cidade",
+       "name": {
+          "pt_BR": "cidade",
+          "en": "city"
+       },
+       "description": {
+          "pt_BR": "cidade do contato",
+          "en": "contact city"
+       },
+       "field_type": "string"
+      },
+      {"key": "estado",
+       "name": {
+          "pt_BR": "estado",
+          "en": "state"
+       },
+       "description": {
+          "pt_BR": "estado do contato",
+          "en": "contact state"
+       },
+       "field_type": "string"
+      },
+      {"key": "anotacoes",
+       "name": {
+          "pt_BR": "anotacoes",
+          "en": "notes"
+       },
+       "description": {
+          "pt_BR": "anotações do contato",
+          "en": "contact notes"
+       },
+       "field_type": "string"
+      },
+      {"key": "nome_empresa",
+       "name": {
+          "pt_BR": "nome da empresa",
+          "en": "company name"
+       },
+       "description": {
+          "pt_BR": "nome da empresa do contato",
+          "en": "contact company name"
+       },
+       "field_type": "string"
+      },
+      {"key": "cargo",
+       "name": {
+          "pt_BR": "cargo",
+          "en": "job role"
+       },
+       "description": {
+          "pt_BR": "cargo do contato",
+          "en": "contact job role"
+       },
+       "field_type": "string"
+      },
+      {"key": "setor",
+       "name": {
+          "pt_BR": "setor",
+          "en": "industry"
+       },
+       "description": {
+          "pt_BR": "setor de atuação do contato",
+          "en": "contact industry"
+       },
+       "field_type": "string"
+      },
+      {"key": "email_empresa",
+       "name": {
+          "pt_BR": "email corporativo",
+          "en": "professional email"
+       },
+       "description": {
+          "pt_BR": "email corporativo do contato",
+          "en": "contact professional email"
+       },
+       "field_type": "string"
+      },
+      {"key": "tel_empresa",
+       "name": {
+          "pt_BR": "telefone comercial",
+          "en": "comercial phone number"
+       },
+       "description": {
+          "pt_BR": "telefone comercial do contato",
+          "en": "contact comercial phone number"
+       },
+       "field_type": "integer"
+      },
+      {"key": "endereco",
+       "name": {
+          "pt_BR": "endereço",
+          "en": "address"
+       },
+       "description": {
+          "pt_BR": "endereço do contato",
+          "en": "contact address"
+       },
+       "field_type": "string"
+      },
+      {"key": "site_empresa",
+       "name": {
+          "pt_BR": "site da empresa",
+          "en": "company website"
+       },
+       "description": {
+          "pt_BR": "site da empresa do contato",
+          "en": "contact company website"
+       },
+       "field_type": "string"
+      },
+      {"key": "twitter_empresa",
+       "name": {
+          "pt_BR": "twitter da empresa",
+          "en": "company twitter"
+       },
+       "description": {
+          "pt_BR": "twitter da empresa do contato",
+          "en": "contact company twitter"
+       },
+       "field_type": "string"
+      },
+      {"key": "facebook_empresa",
+       "name": {
+          "pt_BR": "facebook da empresa",
+          "en": "company facebook"
+       },
+       "description": {
+          "pt_BR": "facebook da empresa do contato",
+          "en": "contact company facebook"
+       },
+       "field_type": "string"
+      },
+      {"key": "conversoes",
+       "name": {
+          "pt_BR": "número de conversões",
+          "en": "conversions number"
+       },
+       "description": {
+          "pt_BR": "número de conversões do contato",
+          "en": "contact conversions"
+       },
+       "field_type": "string"
+      },
+      {"key": "ultima_conversao",
+       "name": {
+          "pt_BR": "última conversão",
+          "en": "last conversion"
+       },
+       "description": {
+          "pt_BR": "última conversão do contato",
+          "en": "contact last conversion"
+       },
+       "field_type": "string"
+      },
+      {"key": "dtultimaconversao",
+       "name": {
+          "pt_BR": "data da última conversão",
+          "en": "last conversion date"
+       },
+       "description": {
+          "pt_BR": "data da última conversão do contato",
+          "en": "contact last conversion date"
+       },
+       "field_type": "datetime"
+      },
+      {"key": "dono_contato",
+       "name": {
+          "pt_BR": "dono do contato",
+          "en": "contact owner"
+       },
+       "description": {
+          "pt_BR": "dono do contato",
+          "en": "contact owner"
+       },
+       "field_type": "integer"
+      },
+      {"key": "tags",
+       "name": {
+          "pt_BR": "tags",
+          "en": "tags"
+       },
+       "description": {
+          "pt_BR": "tags do contato",
+          "en": "contact tags"
+       },
+       "field_type": "string"
+      },
+      {"key": "contatos_estagio_id",
+       "name": {
+          "pt_BR": "estágio do contato",
+          "en": "contact stage"
+       },
+       "description": {
+          "pt_BR": "estágio do funil do contato",
+          "en": "contact funnel stage"
+       },
+       "field_type": "integer"
+      },
+      {"key": "origem",
+       "name": {
+          "pt_BR": "origem do contato",
+          "en": "contact source"
+       },
+       "description": {
+          "pt_BR": "origem do contato",
+          "en": "contact source"
+       },
+       "field_type": "string"
+      },
+      {"key": "perfil",
+       "name": {
+          "pt_BR": "perfil do contato",
+          "en": "contact profile"
+       },
+       "description": {
+          "pt_BR": "perfil do contato",
+          "en": "contact profile"
+       },
+       "field_type": "string"
+      },
+      {"key": "interesse",
+       "name": {
+          "pt_BR": "interesse do contato",
+          "en": "contact interest"
+       },
+       "description": {
+          "pt_BR": "interesse do contato",
+          "en": "contact interest"
+       },
+       "field_type": "string"
+      },
+      {"key": "envia_email",
+       "name": {
+          "pt_BR": "enviar email ao contato",
+          "en": "contact send email"
+       },
+       "description": {
+          "pt_BR": "enviar email ao contato",
+          "en": "contact send email"
+       },
+       "field_type": "string"
+      },
+      {"key": "dtcriacao",
+       "name": {
+          "pt_BR": "data de criação",
+          "en": "create date"
+       },
+       "description": {
+          "pt_BR": "data de criação do contato",
+          "en": "contact create date"
+       },
+       "field_type": "datetime"
+      },
+      {"key": "dtativo",
+       "name": {
+          "pt_BR": "data de ativação",
+          "en": "activation date"
+       },
+       "description": {
+          "pt_BR": "data de ativação do contato",
+          "en": "contact activation date"
+       },
+       "field_type": "datetime"
+      },
+      {"key": "dtinativo",
+       "name": {
+          "pt_BR": "data de inativação",
+          "en": "inactivation date"
+       },
+       "description": {
+          "pt_BR": "data de inativação do contato",
+          "en": "contact inactivation date"
+       },
+       "field_type": "datetime"
+      },
+      {"key": "envia_sms",
+       "name": {
+          "pt_BR": "enviar sms ao contato",
+          "en": "contact send sms"
+       },
+       "description": {
+          "pt_BR": "enviar sms ao contato",
+          "en": "contact send sms"
+       },
+       "field_type": "string"
+      },
+      {"key": "sexo",
+       "name": {
+          "pt_BR": "sexo",
+          "en": "gender"
+       },
+       "description": {
+          "pt_BR": "sexo do contato",
+          "en": "contact gender"
+       },
+       "field_type": "string"
+      },
+      {"key": "dtaniversario",
+       "name": {
+          "pt_BR": "data de aniversário",
+          "en": "birthday"
+       },
+       "description": {
+          "pt_BR": "data de aniversário do contato",
+          "en": "contact birthday"
+       },
+       "field_type": "date"
+      }
+    ]
+  },
+  "trigger_type": "rest_hook",
+  "webhook": {
+    "message_type": "object",
+    "rest_hook_config": {
+      "create": {
+        "verb": "POST",
+        "method_name": "/pluga_trigger",
+        "params": {"event":"new_opportunity"}
+      },
+      "delete": {
+        "verb": "DELETE",
+        "method_name": "/pluga_trigger/{id}"
+      },
+      "meta_params": {
+        "webhook_id": "id",
+        "webhook_url": "url"
+      }
+    }  
+  },
+  "event_filter":{
+    "field":"event",
+    "events":["new_opportunity"]
+  },
+  "idempotent":[
+    {"type":"body", "field":"id"}
+  ]
+}
