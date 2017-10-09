@@ -448,13 +448,13 @@
         "webhook_id": "id",
         "webhook_url": "url"
       }
-    }  
-  },
-  "event_filter":{
-    "field":"event",
-    "events":["new_opportunity"]
-  },
-  "idempotent":[
-    {"type":"body", "field":"id"}
-  ]
+    },
+    "event_filter":{
+      "field":"event",
+      "events":["new_opportunity"]
+    },
+    "idempotent":[
+      {"type":"body", "field":"id"}
+    ]  
+  }
 }
