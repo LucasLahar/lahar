@@ -3,7 +3,7 @@
       "pt_BR":"Atualiza um lead na base de contatos da LAHAR quando ele passa a ser um cliente",
       "en":"Updates a lead in the LAHAR contact base when it becomes a customer"
    },
-   "action_key":"send_lead",
+   "action_key":"won_deal",
    "description":{
       "pt_BR":"Atualiza um lead na base de contatos da LAHAR quando ele passa a ser um cliente",
       "en":"Updates a lead in the LAHAR contact base when it becomes a customer"
@@ -268,6 +268,7 @@
       ]
    },
    "request":{
-      "method_name":"/conversions"
+      "method_name":"/conversions",
+      "json_api": true
    }
 }
