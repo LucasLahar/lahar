@@ -268,6 +268,8 @@
       ]
    },
    "request":{
-      "method_name":"/conversions"
+      "method_name":"/conversions",
+      "error_fields": ["data"],
+      "json_api": true
    }
 }
