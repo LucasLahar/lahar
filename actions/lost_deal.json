@@ -269,7 +269,7 @@
    },
    "request":{
       "method_name":"/conversions",
-      "error_fields": ["data"],
+      "error_fields": ["data.error.code", "data.error.message"],
       "json_api": true
    }
 }
