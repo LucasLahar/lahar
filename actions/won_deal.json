@@ -1,0 +1,275 @@
+{
+   "name":{
+      "pt_BR":"Atualiza um lead na base de contatos da LAHAR quando ele passa a ser um cliente",
+      "en":"Updates a lead in the LAHAR contact base when it becomes a customer"
+   },
+   "action_key":"won_deal",
+   "description":{
+      "pt_BR":"Atualiza um lead na base de contatos da LAHAR quando ele passa a ser um cliente",
+      "en":"Updates a lead in the LAHAR contact base when it becomes a customer"
+   },
+   "action_fields":{
+      "fields":[
+         {
+            "key":"nome_formulario",
+            "name":{
+               "pt_BR":"Evento de conversão",
+               "en":"Conversion event"
+            },
+            "description":{
+               "pt_BR":"Evento de conversão do lead",
+               "en":"lead conversion event"
+            },
+            "required":true,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string"
+         },
+         {
+            "key":"email_contato",
+            "name":{
+               "pt_BR":"email",
+               "en":"email"
+            },
+            "description":{
+               "pt_BR":"Email do contato",
+               "en":"Contact email"
+            },
+            "required":true,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string"
+         },
+         {
+            "key":"nome_contato",
+            "name":{
+               "pt_BR":"nome",
+               "en":"name"
+            },
+            "description":{
+               "pt_BR":"Nome do contato",
+               "en":"Contact name"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string",
+            "max":100
+         },
+         {
+            "key":"sobrenome",
+            "name":{
+               "pt_BR":"sobrenome",
+               "en":"last name"
+            },
+            "description":{
+               "pt_BR":"Sobrenome do contato",
+               "en":"Contact last name"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string",
+            "max":100
+         },
+         {
+            "key":"tel_fixo",
+            "name":{
+               "pt_BR":"telefone fixo",
+               "en":"phone"
+            },
+            "description":{
+               "pt_BR":"Telefone fixo de contato",
+               "en":"Phone number"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"integer",
+            "max":20
+         },
+         {
+            "key":"tel_celular",
+            "name":{
+               "pt_BR":"celular",
+               "en":"mobile phone"
+            },
+            "description":{
+               "pt_BR":"Telefone celular de contato",
+               "en":"Mobile phone number"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"integer",
+            "max":20
+         },
+         {
+            "key":"tel_empresa",
+            "name":{
+               "pt_BR":"telefone comercial",
+               "en":"work phone"
+            },
+            "description":{
+               "pt_BR":"Telefone comercial do contato",
+               "en":"Work phone number"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"integer",
+            "max":20
+         },
+         {
+            "key":"cargo",
+            "name":{
+               "pt_BR":"cargo",
+               "en":"position"
+            },
+            "description":{
+               "pt_BR":"Cargo",
+               "en":"Position"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string",
+            "max":100
+         },
+         {
+            "key":"nome_empresa",
+            "name":{
+               "pt_BR":"empresa",
+               "en":"company"
+            },
+            "description":{
+               "pt_BR":"Nome da empresa",
+               "en":"Company name"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string",
+            "max":100
+         },
+         {
+            "key":"site_empresa",
+            "name":{
+               "pt_BR":"website",
+               "en":"website"
+            },
+            "description":{
+               "pt_BR":"Website da empresa",
+               "en":"Company website"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string",
+            "max":100
+         },
+         {
+            "key":"endereco_empresa",
+            "name":{
+               "pt_BR":"endereço",
+               "en":"address"
+            },
+            "description":{
+               "pt_BR":"Endereço",
+               "en":"Address"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string",
+            "max":255
+         },
+         {
+            "key":"cidade",
+            "name":{
+               "pt_BR":"cidade",
+               "en":"city"
+            },
+            "description":{
+               "pt_BR":"Cidade",
+               "en":"City"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string",
+            "max":100
+         },
+         {
+            "key":"estado",
+            "name":{
+               "pt_BR":"estado",
+               "en":"state"
+            },
+            "description":{
+               "pt_BR":"Estado",
+               "en":"State"
+            },
+            "label":{
+               "pt_BR":"Selecione estado",
+               "en":"Select state"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string"
+         },
+         {
+            "key":"anotacoes",
+            "name":{
+               "pt_BR":"anotações",
+               "en":"notes"
+            },
+            "description":{
+               "pt_BR":"Anotações do contato",
+               "en":"Contact notes"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string"
+         },
+         {
+            "key":"tags",
+            "name":{
+               "pt_BR":"tags",
+               "en":"tags"
+            },
+            "description":{
+               "pt_BR":"Tags do contato",
+               "en":"Contact tags"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"custom",
+            "data_type":"string",
+            "max":255
+         }
+      ]
+   },
+   "request":{
+      "method_name":"/conversions",
+      "error_fields": ["data.error.code", "data.error.message"],
+      "json_api": true
+   }
+}
