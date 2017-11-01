@@ -11,7 +11,7 @@
   "signup_url": "http://www.lahar.com.br/",
   "video": "https://youtu.be/4I5x1VXhoFY",
   "api_base_uri": {
-    "production": {"uri": "https://app.lahar.com.br/api", "label": "Produção", "default": true}
+    "production": {"uri": "https://app.lahar.com.br", "label": "Produção", "default": true}
   },
   "authentication": {
     "type": "pass_through_query_string",
