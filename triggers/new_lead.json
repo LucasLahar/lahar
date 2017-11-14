@@ -434,6 +434,7 @@
   "trigger_type": "rest_hook",
   "webhook": {
     "message_type": "list",
+    "field": "data",
     "rest_hook_config": {
       "create": {
         "verb": "POST",
