@@ -433,7 +433,7 @@
   },
   "trigger_type": "rest_hook",
   "webhook": {
-    "message_type": "list",
+    "message_type": "object",
     "field": "data",
     "rest_hook_config": {
       "create": {
