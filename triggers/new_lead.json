@@ -438,12 +438,12 @@
     "rest_hook_config": {
       "create": {
         "verb": "POST",
-        "method_name": "/pluga_trigger",
+        "method_name": "/pluga_trigger/index",
         "params": {"event":"new_lead"}
       },
       "delete": {
         "verb": "DELETE",
-        "method_name": "/pluga_trigger/{id}"
+        "method_name": "/pluga_trigger/index/{id}"
       },
       "meta_params": {
         "webhook_id": "id",
