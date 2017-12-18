@@ -443,8 +443,7 @@
       },
       "delete": {
         "verb": "POST",
-        "method_name": "/pluga_trigger/unsubscribe",
-        "params": {"id":"{id}"}
+        "method_name": "/pluga_trigger/unsubscribe/{id}"
       },
       "meta_params": {
         "webhook_id": "id",
